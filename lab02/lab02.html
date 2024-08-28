@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório 2</title>
+    <style>
+        .destacado {
+            color: rgb(8, 8, 112);
+            font-weight: bold;
+        }
+
+        .container {
+            border: 1px solid rgb(83, 3, 3);
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bem-vindos ao lab 02</h1>
+    <p>O primeiro foi realizado na semana anterior</p><br>
+    <h3>Engenharia de compuação na PUC CAMPINAS</h3>
+    <p>Aqui será apresentado algumas informações do curso</p><br><br>
+
+    <h4>Matérias do segundo semestre eng. computação: </h4>
+    <ul>
+        <li>Cálculo I</li>
+        <li>Organização de sistemas</li>
+        <li>Robótica computacional</li>
+        <li>PI: Desenvolvimento WEB</li>
+    </ul>
+    <h4>Ordem das provas que teremos nesse semestre: </h4>
+    <ol>
+        <li>PI: Desenvolvimento WEB</li>
+        <li>Organização de sistemas</li>
+        <li>Cálculo I</li>
+        <li>Robótica computacional</li>
+    </ol>
+
+    <h3>Informações sobre você: </h3>
+    <form action="/enviar_formulário" method="post">
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="areas">Sua área: </label>
+        <select id="areas" name="areas">
+            <option value="exatas">Exatas</option>
+            <option value="biologicas">Biológicas</option>
+            <option value="humana">Humanas</option>
+        </select><br><br>
+
+        <label for="mensagem">Curiosidades sobre você: </label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form><br>
+
+    <h3>Gráfico em Canvas: </h3>
+    <canvas id="canvas" width="200" height="100" style="border:1px solid #800000;"></canvas>
+    <script>
+        var c = document.getElementById("canvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "#191970";
+        ctx.fillRect(10, 10, 150, 75);
+    </script>
+
+    <h3>Gráfico em SVG: </h3>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="Maroon" stroke-width="4" fill="MidnightBlue" />
+    </svg><br>
+
+    <h3>Vídeo exemplo de um laboratório de computação: </h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qpG5f3jfFPs?si=eq65tLQL6oRm5_xU"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>Ambientes como esse são bastante frequentados na universidade no decorrer do curso.</p>
+
+    <footer>
+        <p>© Site Eng. Computação PUC CAMPINAS</p>
+    </footer>
+
+</body>
+
+</html>
