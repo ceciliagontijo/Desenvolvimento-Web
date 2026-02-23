@@ -1,5 +1,5 @@
 # Desenvolvimento-Web
-Meu primeiro repositório no GitHub.
+HTML, CSS, JavaScript and Node.js.
 
 2024
 
